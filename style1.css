@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+header{
+	height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+}
+.logo{
+    padding: 5px 20px;
+}
+.logo a{
+    float: left;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid transparent;
+	transition: 0.5s ease;
+}
+.logo a:hover{
+    color: #000;
+    background-color: #fff;
+}
+ul{
+	float:right;
+	list-style-type: none;
+	margin-top: 30px;
+	margin-right:60px;
+}
+ul li{
+	display: inline-block;
+	font-size: 20px;
+}
+ul li a{
+	text-decoration: none;
+	color: #000;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.5s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+ul li.active a{
+	background-color: #000;
+	color: #fff;
+}
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+.sub-menu{
+	display: none;
+    top: 30%;
+    position: relative;
+	right: 23%;
+}
+.sub-menu ul{
+	position: absolute;
+	font-size: 20px;
+}
+.main ul li:hover .sub-menu{
+	display: block;
+	position: absolute;
+	background-color: rgb(0,45,117);
+	margin-top: 12px;
+	margin: 5px;
+	margin-left: -8px;
+}
+.main ul li:hover .sub-menu ul {
+	display: block;
+	margin: 8px;
+}
+.main ul li:hover .sub-menu ul li{
+	width: 75px;
+	padding: 5px;
+	border-bottom: 1px#fff;
+	background: transparent;
+	transition: 0.4s ease;
+	text-align: left;
+	border-radius: 0;	
+}
+.carousel-item img{
+	max-width: 100%;
+	max-height: 100%;
+    filter: brightness(90%);
+}
+img{
+	height: 100vh;
+}
+.carousel-item .carousel-caption h5{
+	color: #fff;
+	font-size: 40px;
+}
